@@ -38,7 +38,7 @@ header body {
 }
 
 .header {
-    background-color: orange;
+    background: #FFFCF4;
 }
 
 .header.fixed {
@@ -116,6 +116,15 @@ header .action a {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.8rem; 
+}
+
+.hero .media {
+
+}
+
+.hero .hero-img {
+  width: 470px;
+  height: 685px;
 }
 
 
