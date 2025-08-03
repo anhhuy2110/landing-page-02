@@ -34,16 +34,16 @@ a {
 /* header */
 
 header body {
-    background: #FFFCF4;
+  background: #FFFCF4;
 }
 
 .header {
-    background-color: orange;
+  background: #FFFCF4;
 }
 
 .header.fixed {
-    position: sticky;
-    top: -28px;
+  position: sticky;
+  top: -28px;
 }
 
 header .body {
@@ -64,11 +64,11 @@ header .body {
 }
 
 .nav li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav li a {
-  position: relative;  
+  position: relative;
   padding: 8px 21px;
   color: #5f5b53;
   text-align: center;
@@ -79,25 +79,25 @@ header .body {
 
 .nav li.active a,
 .nav li a:hover {
-    /* font-weight: 600; */
-    text-shadow: 1px 0 0 currentColor;
-    color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
 }
-    
+
 .nav {
   margin-left: auto;
 }
 
 .nav li.active a::after {
-    position: absolute;
-    left: 21px;
-    bottom: 6px ;
-    display: block;
-    content: "";
-    width: 12px;
-    height: 2px;
-    border-radius: 1px;
-    background: #171100;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
 }
 
 header .action {
@@ -115,8 +115,196 @@ header .action a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 2.8rem; 
+  line-height: 2.8rem;
 }
 
 
+/* Hero */
 
+.hero {
+  padding-top: 64px;
+  background-color: #FFFCF4;
+  height: calc(100vh - 94px);
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero-summary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  width: 270px;
+  height: 244px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-img {
+  width: 470px;
+  height: 685px;
+  object-fit: fill;
+  border-radius: 20px;
+  vertical-align: bottom;
+}
+
+.hero-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 28px 24px;
+}
+
+.hero .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .info {
+  margin-left: 16px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.hero .item label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.hero .item .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-top: 4px;
+}
+
+.hero .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e8;
+}
+
+.hero .item:nth-of-type(2) .icon {
+  background-color: #FCEFFF;
+}
+
+.hero .item:nth-of-type(3) .icon {
+  background-color: #EBEAFF;
+}
+
+
+/* hero right */
+
+.hero .content-block {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .content-block .heading {
+  color: #171100;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 6.8rem;
+  width: 470px;
+  letter-spacing: -1.16px;
+}
+
+.hero .content-block .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 22px;
+}
+
+.hero .cta-group {
+  display: flex;
+  margin-top: 38px;
+}
+
+.hero .cta-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #ffb900;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 17px 33px;
+}
+
+.hero .watch-video {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: none;
+  background-color: #FFFCF4;
+  margin-left: 28px;
+}
+
+.hero .watch-video .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #FFF;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  margin-right: 14px;
+}
+
+.hero .watch-video span {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.hero .content-block .desc:nth-of-type(2) {
+  margin-top: 0;
+  padding-top: 48px;
+}
+
+.hero .content-block .desc:nth-of-type(3) {
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+.hero .desc .stats {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.hero .stats strong {
+  padding: 0 13px 0 28px;
+  color: #171100;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  font-size: 4.4rem;
+}
+
+.hero .stats strong:nth-of-type(1) {
+  padding-left: 0;
+}
